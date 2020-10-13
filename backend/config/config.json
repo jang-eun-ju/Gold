@@ -1,0 +1,13 @@
+{
+    "development" : {
+        "username": "admin",
+        "password":"abcd1234",
+        "database": "gold",
+        "host": "database.cnnamhdeoixj.us-east-2.rds.amazonaws.com",
+        "dialect": "mysql",
+        "define": {
+            "timestamps": false
+
+        }
+    }
+}
