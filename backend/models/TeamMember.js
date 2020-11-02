@@ -3,7 +3,7 @@ const { sequelize } = require(".");
 module.exports = (sequelize, DataTypes) => {
     return sequelize.define('TeamMember', {
         memId: {
-            type: DataTypes.INT.UNSIGNED,
+            type: DataTypes.INTEGER.UNSIGNED,
             allowNull: false,
             primaryKey: true,
             unique: true,
@@ -19,10 +19,9 @@ module.exports = (sequelize, DataTypes) => {
             }
         },
         teamIndex: {
-            type: DataTypes.INT.UNSIGNED,
+            type: DataTypes.INTEGER.UNSIGNED,
             allowNull: false,
             unique: true,
-            autoIncrement: true,
             reference:{
                 model: "Team",
                 key: "index"
