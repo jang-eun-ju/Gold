@@ -3,7 +3,7 @@ const { sequelize } = require(".");
 module.exports = (sequelize, DataTypes) => {
     return sequelize.define('Team', {
         index: {
-            type: DataTypes.INT.UNSIGNED,
+            type: DataTypes.INTEGER.UNSIGNED,
             allowNull: false,
             primaryKey: true,
             unique: true,
@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
             unique: true
         },
         number: {
-            type: DataTypes.INT.UNSIGNED,
+            type: DataTypes.INTEGER.UNSIGNED,
             allowNull: false
         },
         leaderId: {
